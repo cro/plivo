@@ -3,7 +3,7 @@ defmodule Plivo.Mixfile do
 
   def project do
     [
-      app: :plivo,
+      app: :ex_plivo,
       version: "0.1.0",
       build_path: "_build",
       config_path: "config/config.exs",

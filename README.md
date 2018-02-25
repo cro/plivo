@@ -11,7 +11,7 @@
 ```elixir
 def deps do
   [
-    {:plivo, "~> 0.1.0"}
+    {:ex_plivo, "~> 0.1.0"}
   ]
 end
 ```
