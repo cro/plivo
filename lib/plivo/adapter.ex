@@ -113,15 +113,17 @@ defmodule Plivo.Adapter do
 
   Parameters:
     - Country iso (e.g. "GB")
+    - Type (e.g. "mobile")
+    - Services (e.g. "voice")
   Returns
     - New phone number
   """
-  def create_number(country_iso) do
+  def create_number(country_iso, type, services) do
     with {:ok, %HTTPoison.Response{body: search_response_body}} <-
            Plivo.get("/PhoneNumber/",
                      basic_auth_header(),
-                     params: [type: "mobile",
-                              services: "voice",
+                     params: [type: type,
+                              services: services,
                               country_iso: country_iso]),
          new_number =
           search_response_body
