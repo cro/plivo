@@ -6,7 +6,7 @@
 
 ## Installation
 
-1. Add `plivo` to your list of dependencies in `mix.exs` and install it:
+1. Add `ex_plivo` to your list of dependencies in `mix.exs` and install it:
 
 ```elixir
 def deps do
@@ -36,5 +36,5 @@ Plivo.Adapter.create_number("GB", "mobile", "voice")
 
 ## Docs
 The docs can
-be found at [https://hexdocs.pm/plivo](https://hexdocs.pm/plivo).
+be found at [https://hexdocs.pm/ex_plivo](https://hexdocs.pm/ex_plivo).
 
