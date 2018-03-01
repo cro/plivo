@@ -4,7 +4,7 @@ defmodule Plivo.Mixfile do
   def project do
     [
       app: :ex_plivo,
-      version: "0.1.0",
+      version: "0.1.1",
       build_path: "_build",
       config_path: "config/config.exs",
       deps_path: "deps",
@@ -35,7 +35,7 @@ defmodule Plivo.Mixfile do
   end
 
   defp description() do
-    "An elixir library to paginate ecto tables using drab. The library can, for example, be used to create infinity scrolling."
+    "An elixir client for the plivo api."
   end
 
   defp package() do
